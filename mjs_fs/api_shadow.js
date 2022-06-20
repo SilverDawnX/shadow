@@ -19,7 +19,7 @@ let Shadow = {
     Event.addGroupHandler(this.BASE, function(_e, _ed, _ud) {
       let n = _e - _ud.self.BASE, param = {};
       let name = _ud.self._en(_e) || '???';
-      if (n == 3 || n == 5 || n == 7) {
+      if ( n === 3 || n === 5 || n === 7 ) {
         let s = mkstr(_ud.self._sp(_ed), _ud.self._sl(_ed));
         if (s) param = JSON.parse(s);
       }
